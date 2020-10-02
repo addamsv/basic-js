@@ -8,6 +8,4 @@ module.exports = function dateSample(sampleActivity) {
     return false;
   }
   return Math.log(MODERN_ACTIVITY / sampleActivity) / (0.693 / HALF_LIFE_PERIOD);
-  throw new CustomError('Not implemented');
-  // remove line with error and write your code here
 };
