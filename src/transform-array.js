@@ -19,6 +19,10 @@ module.exports = function transform(arr) {
     }
     switch(arr[i]){
       case '--discard-prev':
+        /* rare case */
+        if(arr[i+1]===undefined && arr[i-2]==='--double-next'){
+          newArr.pop();
+        }
         continue;
       break;
       case '--double-next':
